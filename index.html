@@ -1,1499 +1,594 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
+    <title>MINH CHÂU LOGISTICS | Fast & Safe Shipping</title>
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>NBT Logistics | Giải pháp Logistics toàn diện</title>
-
-    <meta
-        name="description"
-        content="NBT Logistics - Giải pháp logistics, vận chuyển, xuất nhập khẩu và khai báo hải quan toàn diện."
-    >
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <body>
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-    >
-</head>
+    <header class="header">
+      <!-- TOP HEADER -->
+      <div class="top-header">
+        <div class="container top-header-container">
+          <a href="index.html" class="logo">
+            <span>MINH CHÂU</span>
+            <strong>LOGISTICS</strong>
+          </a>
 
+          <div class="header-info">
+            <div class="header-info-item">
+              <div class="header-info-icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
 
-<body>
-
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
-
-<header class="site-header">
-
-    <header class="site-header">
-
-    <div class="header-container">
-
-        <!-- LOGO -->
-        <a href="#" class="header-logo">
-            <img src="images/logo.png" alt="NBT Logistics">
-        </a>
-
-        <!-- MENU -->
-        <nav class="header-nav">
-
-            <a href="#services">Dịch vụ</a>
-
-            <a href="#pricing">Bảng giá</a>
-
-            <a href="#export">Xuất khẩu Việt - Nga</a>
-
-            <a href="#about">Về chúng tôi</a>
-
-            <a href="#process">Quy trình</a>
-
-            <a href="#news">Tin tức</a>
-
-            <a href="#contact">Liên hệ</a>
-
-        </nav>
-
-        <!-- ACTION -->
-        <div class="header-actions">
-
-            <button class="btn-feedback">
-                Góp ý
-            </button>
-
-            <div class="tracking-box">
-
-                <input
-                    type="text"
-                    placeholder="Tra cứu mã vận đơn"
-                >
-
-                <span class="tracking-icon">
-                    🔍
-                </span>
-
+              <div>
+                <span>Liên hệ</span>
+                <p>+84 123 456 789</p>
+              </div>
             </div>
 
-            <button class="btn-quote">
-                BÁO GIÁ
-            </button>
+            <div class="header-info-item">
+              <div class="header-info-icon">
+                <i class="fa-regular fa-clock"></i>
+              </div>
 
-        </div>
-
-    </div>
-
-</header>
-
-
-        <!-- HEADER ACTIONS -->
-
-        <div class="header-actions">
-
-            <button class="feedback-btn">
-                Góp ý
-            </button>
-
-
-            <div class="tracking-mini">
-
-                <span>
-                    Tra cứu mã vận đơn
-                </span>
-
-                <span class="search-icon">
-                    ⌕
-                </span>
-
+              <div>
+                <span>Thời gian làm việc</span>
+                <p>T2 - T7: 8:00 - 22:00</p>
+              </div>
             </div>
 
-
-            <a
-                href="#quote"
-                class="quote-btn"
-            >
-                BÁO GIÁ
+            <a href="#quote" class="quote-btn">
+              REQUEST A QUOTE
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
+          </div>
 
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
+      </div>
 
+      <!-- NAVBAR -->
+      <nav class="navbar" id="navbar">
+        <div class="container">
+          <ul class="nav-list">
+            <li>
+              <a href="index.html" class="active">
+                <i class="fa-solid fa-house"></i>
+                Trang Chủ
+              </a>
+            </li>
 
-        <!-- MOBILE -->
+            <li>
+              <a href="about.html">
+                <i class="fa-solid fa-building"></i>
+                Về Chúng Tôi
+              </a>
+            </li>
 
-        <button
-            class="mobile-toggle"
-            aria-label="Mở menu"
-        >
-            ☰
-        </button>
+            <li>
+              <a href="services.html">
+                <i class="fa-solid fa-truck-fast"></i>
+                Dịch Vụ
+              </a>
+            </li>
 
-    </div>
+            <li>
+              <a href="contact.html">
+                <i class="fa-solid fa-phone"></i>
+                Tư Vấn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-</header>
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
 
+    <section class="hero">
+      <div class="hero-overlay"></div>
 
+      <div class="hero-arrow hero-arrow-left">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+      <div class="hero-content container">
+        <p class="hero-small-title">PROFESSIONAL LOGISTICS COMPANY</p>
 
-<main>
-
-
-<section
-    id="home"
-    class="hero"
->
-
-
-    <div class="hero-content container">
-
-
-        <h1 class="hero-title">
-
-            DẪN ĐẦU VỀ GIẢI PHÁP
-            LOGISTICS TOÀN DIỆN
-
-        </h1>
-
+        <h1>MINH CHÂU LOGISTICS</h1>
 
         <p class="hero-description">
-
-            NBT Logistics tự hào là đối tác vận chuyển chính ngạch
-            Trung - Việt uy tín, mang đến giải pháp Logistics toàn diện,
-            sẵn sàng đồng hành cùng quý doanh nghiệp trên hành trình
-            xây dựng sự phát triển bền vững.
-
+          Fast & safe shipping. Every time. Everywhere.
         </p>
-
-
-        <p class="hero-description">
-
-            Với hệ sinh thái dịch vụ đa dạng, chúng tôi luôn nỗ lực
-            lắng nghe và thấu hiểu để cung cấp những giải pháp nhập hàng
-            và vận chuyển tối ưu nhất - hỗ trợ doanh nghiệp vượt qua
-            mọi thách thức, giải quyết mọi vấn đề và đáp ứng tốt nhất
-            từng mong muốn, nhu cầu cụ thể của quý doanh nghiệp.
-
-        </p>
-
 
         <div class="hero-buttons">
+          <a href="about.html" class="btn btn-primary"> ABOUT COMPANY </a>
 
-            <a
-                href="#contact"
-                class="btn-yellow"
-            >
+          <a href="contact.html" class="btn btn-outline"> CONTACT US </a>
+        </div>
+      </div>
 
-                Tư vấn cho tôi
+      <div class="hero-arrow hero-arrow-right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </section>
 
-                <span class="arrow">
-                    →
-                </span>
+    <!-- =========================
+         SERVICES CARDS
+    ========================== -->
 
-            </a>
+    <section class="services-preview section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-subtitle"> OUR SERVICES </span>
 
+          <h2>Complete Logistics Solutions</h2>
 
-            <a
-                href="#quote"
-                class="btn-yellow"
-            >
-
-                Nhận báo giá tự động
-
-                <span class="arrow">
-                    →
-                </span>
-
-            </a>
-
+          <p>
+            We provide professional transportation, storage and logistics
+            solutions for businesses.
+          </p>
         </div>
 
-    </div>
+        <div class="service-cards">
+          <!-- CARD 1 -->
+          <a href="storage.html" class="service-card">
+            <img src="./assets/images/warehouse.jpg" alt="Warehouse" />
 
+            <div class="service-card-overlay"></div>
 
+            <div class="service-card-content">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-warehouse"></i>
+              </div>
 
-    <!-- HERO IMAGE -->
+              <h3>Warehousing & Storage</h3>
 
-    <div class="hero-image">
+              <p>Secure storage solutions for all types of cargo and goods.</p>
+            </div>
+          </a>
 
-        <img
-            src="assets/thumnail.jpg"
-            alt="Vận chuyển logistics"
-        >
+          <!-- CARD 2 -->
+          <a href="services.html" class="service-card">
+            <img src="./assets/images/containers.jpg" alt="Containers" />
 
-    </div>
+            <div class="service-card-overlay"></div>
 
+            <div class="service-card-content">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </div>
 
-</section>
+              <h3>Custom Transport Solutions</h3>
 
+              <p>
+                Flexible logistics services tailored to your business needs.
+              </p>
+            </div>
+          </a>
 
+          <!-- CARD 3 -->
+          <a href="fleet.html" class="service-card">
+            <img src="./assets/images/truck-road.jpg" alt="Truck" />
 
-<!-- =====================================================
-     TRACKING
-===================================================== -->
+            <div class="service-card-overlay"></div>
 
-<section class="tracking-section">
+            <div class="service-card-content">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-truck-moving"></i>
+              </div>
 
-    <div class="tracking-box">
+              <h3>Nationwide Delivery</h3>
 
-        <div class="tracking-title">
+              <p>Fast and reliable delivery across the country.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-            Tra cứu hành trình đơn hàng
+    <!-- =========================
+         ABOUT COMPANY
+    ========================== -->
 
+    <section class="about-home section">
+      <div class="container about-grid">
+        <div class="about-content">
+          <span class="section-subtitle"> ABOUT SEVEN LOGISTICS </span>
+
+          <h2>
+            Fast & Safe Shipping.<br />
+            Every Time. Everywhere.
+          </h2>
+
+          <p>
+            Minh Châu Logistics provides professional logistics solutions for
+            businesses and individuals. Our mission is to make transportation
+            simpler, faster and safer.
+          </p>
+
+          <p>
+            With an experienced team and modern transportation systems, we are
+            ready to deliver your goods safely and on time.
+          </p>
+
+          <a href="about.html" class="btn btn-primary"> LEARN MORE </a>
         </div>
 
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
 
-        <form class="tracking-form">
+            <div>
+              <h4>Careful Handling</h4>
 
-            <input
-                type="text"
-                placeholder="Nhập mã vận đơn của bạn..."
-                aria-label="Mã vận đơn"
-            >
+              <p>Professional handling of valuable goods.</p>
+            </div>
+          </div>
 
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
 
-            <button type="submit">
+            <div>
+              <h4>Optimization Programs</h4>
 
-                Tra cứu đơn
+              <p>Optimized transportation for better costs.</p>
+            </div>
+          </div>
 
-            </button>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
 
-        </form>
+            <div>
+              <h4>24/7 Technical Support</h4>
 
-    </div>
+              <p>Our support team is always ready to help.</p>
+            </div>
+          </div>
 
-</section>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fa-solid fa-dollar-sign"></i>
+            </div>
 
+            <div>
+              <h4>Low Operational Costs</h4>
 
+              <p>Cost-effective logistics solutions.</p>
+            </div>
+          </div>
 
-<!-- =====================================================
-     SERVICES
-===================================================== -->
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fa-solid fa-user-group"></i>
+            </div>
 
-<section
-    id="services"
-    class="services-section section"
->
+            <div>
+              <h4>Professional Team</h4>
 
+              <p>Experienced and highly trained staff.</p>
+            </div>
+          </div>
 
-    <div class="container">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fa-solid fa-stopwatch"></i>
+            </div>
 
+            <div>
+              <h4>Fast Processing</h4>
 
-        <div class="section-title">
+              <p>Fast order and shipment processing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <h2>
-                GIẢI PHÁP LOGISTICS<br>
-                TOÀN DIỆN
-            </h2>
+    <!-- =========================
+         STATS
+    ========================== -->
 
-            <span class="small-title">
-                Tại NBT Logistics
-            </span>
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-ship"></i>
+          </div>
 
-            <div class="yellow-line"></div>
+          <h3>15+</h3>
 
+          <p>Years Experience</p>
         </div>
 
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-truck"></i>
+          </div>
 
+          <h3>500+</h3>
 
-        <div class="services-grid">
-
-
-            <!-- SERVICE 1 -->
-
-            <article class="service-card">
-
-                <div class="service-icon">
-                    🚚
-                </div>
-
-                <h3>
-                    VẬN CHUYỂN<br>
-                    ĐA PHƯƠNG THỨC
-                </h3>
-
-                <p>
-
-                    NBT Logistics cung cấp đa dạng các phương thức
-                    vận tải, đáp ứng nhiều nhu cầu khác nhau của
-                    doanh nghiệp.
-
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-btn"
-                >
-                    Tìm hiểu thêm
-                </a>
-
-            </article>
-
-
-
-            <!-- SERVICE 2 -->
-
-            <article class="service-card">
-
-                <div class="service-icon">
-                    🌐
-                </div>
-
-                <h3>
-                    UỶ THÁC XUẤT,<br>
-                    NHẬP KHẨU
-                </h3>
-
-                <p>
-
-                    Dịch vụ uỷ thác xuất nhập khẩu giúp doanh nghiệp
-                    tiết kiệm thời gian và công sức trong quá trình
-                    nhập hàng.
-
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-btn"
-                >
-                    Tìm hiểu thêm
-                </a>
-
-            </article>
-
-
-
-            <!-- SERVICE 3 -->
-
-            <article class="service-card">
-
-                <div class="service-icon">
-                    🛡
-                </div>
-
-                <h3>
-                    KHAI BÁO HẢI<br>
-                    QUAN
-                </h3>
-
-                <p>
-
-                    Dịch vụ hải quan giúp doanh nghiệp vượt qua
-                    các thủ tục phức tạp một cách dễ dàng.
-
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-btn"
-                >
-                    Tìm hiểu thêm
-                </a>
-
-            </article>
-
-
-
-            <!-- SERVICE 4 -->
-
-            <article class="service-card">
-
-                <div class="service-icon">
-                    🛒
-                </div>
-
-                <h3>
-                    ĐẠI DIỆN MUA<br>
-                    HÀNG
-                </h3>
-
-                <p>
-
-                    Dịch vụ đại diện mua hàng chính là giải pháp
-                    tối ưu để tìm kiếm nguồn hàng nhập khẩu cho
-                    doanh nghiệp.
-
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-btn"
-                >
-                    Tìm hiểu thêm
-                </a>
-
-            </article>
-
-
-
-            <!-- SERVICE 5 -->
-
-            <article class="service-card">
-
-                <div class="service-icon">
-                    🔍
-                </div>
-
-                <h3>
-                    DỊCH VỤ THẨM<br>
-                    ĐỊNH
-                </h3>
-
-                <p>
-
-                    Dịch vụ thẩm định là hoạt động đánh giá nhà
-                    cung cấp, chất lượng sản phẩm trước khi nhập khẩu.
-
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-btn"
-                >
-                    Tìm hiểu thêm
-                </a>
-
-            </article>
-
-
-
-            <!-- SERVICE 6 -->
-
-            <article class="service-card">
-
-                <div class="service-icon">
-                    📄
-                </div>
-
-                <h3>
-                    DỊCH VỤ HOÀN<br>
-                    THUẾ
-                </h3>
-
-                <p>
-
-                    Dịch vụ hoàn thuế hỗ trợ khách hàng nhận hoàn
-                    thuế trực tiếp từ chính phủ Trung Quốc.
-
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-btn"
-                >
-                    Tìm hiểu thêm
-                </a>
-
-            </article>
-
-
+          <p>Successful Deliveries</p>
         </div>
 
-    </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
 
-</section>
+          <h3>24/7</h3>
 
-
-
-<!-- =====================================================
-     STATS + WAREHOUSE
-===================================================== -->
-
-<section
-    id="about"
-    class="stats-section section"
->
-
-
-    <div class="container">
-
-
-        <h2 class="stats-title">
-
-            CHUỖI GIẢI PHÁP NHẬP HÀNG –
-            VẬN CHUYỂN TOÀN DIỆN
-
-        </h2>
-
-
-        <!-- STATS -->
-
-        <div class="stats">
-
-
-            <div class="stat">
-
-                <strong data-counter="800000">
-                    800.000+
-                </strong>
-
-                <span>
-                    Mét khối hàng hoá
-                </span>
-
-            </div>
-
-
-            <div class="stat">
-
-                <strong data-counter="10000">
-                    10.000+
-                </strong>
-
-                <span>
-                    Chủng loại hàng hoá
-                </span>
-
-            </div>
-
-
-            <div class="stat">
-
-                <strong data-counter="2500">
-                    2.500+
-                </strong>
-
-                <span>
-                    Khách hàng
-                </span>
-
-            </div>
-
-
+          <p>Customer Support</p>
         </div>
 
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-warehouse"></i>
+          </div>
 
+          <h3>3000+</h3>
 
-        <!-- WAREHOUSE -->
+          <p>m² Storage Area</p>
+        </div>
+      </div>
+    </section>
 
-        <div class="warehouse-image">
+    <!-- =========================
+         WHY CHOOSE US
+    ========================== -->
 
-            <img
-                src="assets/global.jpg"
-                alt="Kho hàng logistics"
-            >
+    <section class="why-us section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-subtitle"> WHY CHOOSE US </span>
 
+          <h2>Logistics You Can Trust</h2>
         </div>
 
-
-
-        <div class="center-cta">
-
-            <a
-                href="#quote"
-                class="large-yellow-btn"
-            >
-                TÔI MUỐN NHẬN BÁO GIÁ
-            </a>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     ADVANTAGES
-===================================================== -->
-
-<section
-    id="routes"
-    class="advantages-section section"
->
-
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <span class="small-title">
-                NBT LOGISTICS
-            </span>
-
-            <h2>
-                MANG ĐẾN GIẢI PHÁP HIỆU QUẢ –
-                AN TÂM CHO DOANH NGHIỆP
-            </h2>
-
-            <div class="yellow-line"></div>
-
-        </div>
-
-
-
-        <div class="advantages-grid">
-
-
-            <!-- CARD 1 -->
-
-            <article class="advantage-card">
-
-                <div class="advantage-image">
-
-                    <img
-                        src="assets/flying.jpg"
-                        alt="Vận chuyển tiết kiệm"
-                    >
-
-                </div>
-
-
-                <div class="advantage-content">
-
-                    <h3>
-                        Lộ trình vận chuyển
-                        tiết kiệm tối ưu
-                    </h3>
-
-                    <p>
-
-                        NBT Logistics tư vấn xây dựng lộ trình
-                        vận chuyển ngắn nhất với giá cước tối ưu
-                        nhất cho khách hàng. Kết hợp với nghiệp vụ
-                        khai báo hải quan tối ưu, nhanh chóng giúp
-                        doanh nghiệp tiết kiệm thời gian và chi phí
-                        hiệu quả.
-
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- CARD 2 -->
-
-            <article class="advantage-card">
-
-                <div class="advantage-image">
-
-                    <img
-                        src="assets/logistic.jpg"
-                        alt="Phòng mua hàng"
-                    >
-
-                </div>
-
-
-                <div class="advantage-content">
-
-                    <h3>
-                        Phòng mua hàng
-                        chuyên nghiệp
-                    </h3>
-
-                    <p>
-
-                        Hỗ trợ tư vấn ngành hàng thích hợp, tìm kiếm
-                        sản phẩm chất lượng, đàm phán giá từ đó giúp
-                        doanh nghiệp có được nguồn hàng nhập khẩu
-                        với mức giá tối ưu nhất.
-
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- CARD 3 -->
-
-            <article class="advantage-card">
-
-                <div class="advantage-image">
-
-                    <img
-                        src="assets/1.jpg"
-                        alt="Đa dạng ngành hàng"
-                    >
-
-                </div>
-
-
-                <div class="advantage-content">
-
-                    <h3>
-                        Kinh nghiệm vận chuyển
-                        hơn 10.000+ ngành hàng
-                    </h3>
-
-                    <p>
-
-                        Hệ sinh thái dịch vụ phù hợp với đặc tính
-                        nhiều mặt hàng. Kinh nghiệm và sự am hiểu
-                        về ngành hàng, năng lực xử lý các thủ tục
-                        nhập khẩu chuyên nghiệp.
-
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- CARD 4 -->
-
-            <article class="advantage-card">
-
-                <div class="advantage-image">
-
-                    <img
-                        src="2.jpg"
-                        alt="Mạng lưới liên kết"
-                    >
-
-                </div>
-
-
-                <div class="advantage-content">
-
-                    <h3>
-                        Mạng lưới liên kết
-                        uy tín
-                    </h3>
-
-                    <p>
-
-                        Hệ thống mạng lưới liên kết rộng lớn,
-                        chặt chẽ với các đối tác uy tín tại thị
-                        trường Trung Quốc và Việt Nam.
-
-                    </p>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     MAP / NETWORK
-===================================================== -->
-
-<section
-    id="network"
-    class="map-section section"
->
-
-
-    <div class="map-container">
-
-        <img
-            src="assets/kaka.jpg"
-            alt="Mạng lưới logistics Việt Nam Trung Quốc"
-        >
-
-    </div>
-
-
-    <div class="map-info">
-
-        <h2>
-            Hệ thống kho bãi an toàn
-        </h2>
-
-        <p>
-
-            NBT Logistics sở hữu hệ thống kho chính
-            thuộc khu vực trọng điểm tại Việt Nam và Trung Quốc.
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     BENEFITS
-===================================================== -->
-
-<section
-    id="benefits"
-    class="benefits-section section"
->
-
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                QUYỀN LỢI DOANH NGHIỆP NHẬN ĐƯỢC
-            </h2>
-
-            <div class="yellow-line"></div>
-
-        </div>
-
-
-
-        <div class="benefits-grid">
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">
-                    🚚
-                </div>
-
-                <h3>
-
-                    Hàng về sau 2–3 ngày<br>
-                    Cước cạnh tranh<br>
-                    chỉ từ 3000đ/kg
-
-                </h3>
-
-            </div>
-
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">
-                    📋
-                </div>
-
-                <h3>
-
-                    Hỗ trợ xử lý hồ sơ<br>
-                    thủ tục hải quan<br>
-                    từ A – Z
-
-                </h3>
-
-            </div>
-
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">
-                    💰
-                </div>
-
-                <h3>
-
-                    Tiết kiệm 10–15%<br>
-                    vốn nhập hàng
-
-                </h3>
-
-            </div>
-
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">
-                    🛡
-                </div>
-
-                <h3>
-
-                    Bảo hiểm hàng hoá<br>
-                    Chính sách đền bù<br>
-                    100%
-
-                </h3>
-
-            </div>
-
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">
-                    📄
-                </div>
-
-                <h3>
-
-                    Hỗ trợ nhận hoàn thuế<br>
-                    lên tới 9% giá trị<br>
-                    đơn hàng
-
-                </h3>
-
-            </div>
-
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">
-                    🎧
-                </div>
-
-                <h3>
-
-                    Đội ngũ chăm sóc<br>
-                    Theo dõi hành trình<br>
-                    đơn hàng 24/7
-
-                </h3>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     TESTIMONIALS
-===================================================== -->
-
-<section
-    id="contact"
-    class="testimonials-section section"
->
-
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                PHẢN HỒI CỦA KHÁCH HÀNG
-            </h2>
-
-            <span class="small-title">
-                Về NBT Logistics
-            </span>
-
-            <div class="yellow-line"></div>
-
-        </div>
-
-
-
-        <div class="testimonials-slider testimonials">
-
-
-            <!-- TESTIMONIAL 1 -->
-
-            <article class="testimonial">
-
-                <div class="customer-logo">
-                    ASD<br>Digital
-                </div>
-
-                <p>
-
-                    "Hàng ship và chất lượng dịch vụ tốt hơn
-                    rất nhiều. Hệ thống tra cứu và theo dõi đơn
-                    hàng đơn giản, tiện lợi. Đội ngũ nhân viên
-                    cung cấp thông tin kịp thời cho khách hàng."
-
-                </p>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-            </article>
-
-
-
-            <!-- TESTIMONIAL 2 -->
-
-            <article class="testimonial">
-
-                <div class="customer-logo">
-                    FASHION
-                </div>
-
-                <p>
-
-                    "Đội ngũ hỗ trợ tận tình, có tâm, liên tục
-                    phục vụ 24/7, giải quyết hầu hết các vấn đề
-                    của khách hàng khi kinh doanh online hàng
-                    Trung Quốc."
-
-                </p>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-            </article>
-
-
-
-            <!-- TESTIMONIAL 3 -->
-
-            <article class="testimonial">
-
-                <div class="customer-logo">
-                    ETS
-                </div>
-
-                <p>
-
-                    "Từ ngày biết đến công ty này việc làm ăn
-                    của mình thuận lợi hơn vì những sản phẩm
-                    mình mua thông qua NBT rất đa dạng mẫu mã
-                    và giá thành hợp lý."
-
-                </p>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PROCESS
-===================================================== -->
-
-<section
-    id="process"
-    class="process-section section"
->
-
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <h2>
-                QUY TRÌNH HỢP TÁC<br>
-                CHUYÊN NGHIỆP – RÕ RÀNG
-            </h2>
-
-            <span class="small-title">
-                Cùng NBT Logistics
-            </span>
-
-            <div class="yellow-line"></div>
-
-        </div>
-
-
-
-        <div class="process">
-
-
-            <!-- STEP 1 -->
-
-            <div class="process-step">
-
-                <span class="step-number">
-                    Bước 1
-                </span>
-
-                <p>
-                    Khảo sát nhu cầu khách hàng
-                </p>
-
-            </div>
-
-
-
-            <!-- STEP 2 -->
-
-            <div class="process-step">
-
-                <span class="step-number">
-                    Bước 2
-                </span>
-
-                <p>
-                    Tư vấn và thiết kế giải pháp
-                </p>
-
-            </div>
-
-
-
-            <!-- STEP 3 -->
-
-            <div class="process-step">
-
-                <span class="step-number">
-                    Bước 3
-                </span>
-
-                <p>
-                    Báo giá và thỏa thuận
-                </p>
-
-            </div>
-
-
-
-            <!-- STEP 4 -->
-
-            <div class="process-step">
-
-                <span class="step-number">
-                    Bước 4
-                </span>
-
-                <p>
-                    Chuẩn bị hàng hóa
-                </p>
-
-            </div>
-
-
-
-            <!-- STEP 5 -->
-
-            <div class="process-step">
-
-                <span class="step-number">
-                    Bước 5
-                </span>
-
-                <p>
-                    Xử lý hồ sơ và thủ tục
-                </p>
-
-            </div>
-
-
-
-            <!-- STEP 6 -->
-
-            <div class="process-step">
-
-                <span class="step-number">
-                    Bước 6
-                </span>
-
-                <p>
-                    Vận chuyển và theo dõi
-                </p>
-
-            </div>
-
-
-
-            <!-- STEP 7 -->
-
-            <div class="process-step">
-
-                <span class="step-number">
-                    Bước 7
-                </span>
-
-                <p>
-                    Giao nhận và kiểm tra
-                </p>
-
-            </div>
-
-
-
-            <!-- STEP 8 -->
-
-            <div class="process-step">
-
-                <span class="step-number">
-                    Bước 8
-                </span>
-
-                <p>
-                    Hậu mãi và đánh giá
-                </p>
-
-            </div>
-
-
-        </div>
-
-
-
-        <div class="center-cta">
-
-            <a
-                href="#quote"
-                class="large-yellow-btn"
-            >
-                TƯ VẤN CHO TÔI
-            </a>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     QUOTE CTA
-===================================================== -->
-
-<section
-    id="quote"
-    class="quote-section"
->
-
-
-    <div class="container">
-
-
-        <div class="quote-content">
-
-            <span>
-                NBT LOGISTICS
-            </span>
-
-            <h2>
-                SẴN SÀNG ĐỒNG HÀNH
-                CÙNG DOANH NGHIỆP
-            </h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <i class="fa-solid fa-route"></i>
+
+            <h3>Smart Routes</h3>
 
             <p>
-
-                Hãy để chúng tôi tư vấn giải pháp
-                vận chuyển phù hợp nhất với nhu cầu
-                của doanh nghiệp bạn.
-
+              We optimize every route to save time and reduce transportation
+              costs.
             </p>
+          </div>
 
+          <div class="why-card">
+            <i class="fa-solid fa-box"></i>
 
-            <a
-                href="tel:0900000000"
-                class="large-yellow-btn"
-            >
-                LIÊN HỆ NGAY
+            <h3>Safe Delivery</h3>
+
+            <p>
+              Your cargo is handled carefully from pickup to final delivery.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <h3>Live Tracking</h3>
+
+            <p>Easily monitor your shipment and know where your goods are.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         QUOTE SECTION
+    ========================== -->
+
+    <section class="quote-section" id="quote">
+      <div class="container quote-container">
+        <div class="quote-content">
+          <span> GET A FREE QUOTE </span>
+
+          <h2>Need Reliable Logistics Services?</h2>
+
+          <p>
+            Contact us today and get a customized solution for your
+            transportation needs.
+          </p>
+        </div>
+
+        <form class="quote-form" id="quoteForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+
+          <input type="email" id="email" placeholder="Your Email" required />
+
+          <select id="service" required>
+            <option value="">Select Service</option>
+
+            <option>Transportation</option>
+
+            <option>Warehousing</option>
+
+            <option>International Shipping</option>
+          </select>
+
+          <button type="submit" class="btn btn-dark">REQUEST A QUOTE</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <!-- COMPANY -->
+        <div class="footer-column">
+          <a href="index.html" class="footer-logo">
+            <span>MINH CHÂU</span>
+            LOGISTICS
+          </a>
+
+          <p>
+            Professional logistics and transportation solutions for businesses
+            of all sizes.
+          </p>
+
+          <div class="social-links">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
             </a>
 
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
         </div>
 
-    </div>
+        <!-- QUICK LINKS -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
 
-</section>
+          <ul>
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
 
+            <li>
+              <a href="about.html"> About Us </a>
+            </li>
 
+            <li>
+              <a href="services.html"> Services </a>
+            </li>
 
-</main>
+            <li>
+              <a href="fleet.html"> Vehicle Fleet </a>
+            </li>
 
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="site-footer">
-
-
-    <div class="container">
-
-
-        <div class="footer-grid">
-
-
-            <div class="footer-column">
-
-                <img
-                    src="assets/4.png"
-                    alt="NBT Logistics"
-                    class="footer-logo"
-                >
-
-                <p>
-
-                    Giải pháp logistics toàn diện,
-                    đồng hành cùng doanh nghiệp
-                    trên mọi hành trình.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="footer-column">
-
-                <h3>
-                    Dịch vụ
-                </h3>
-
-                <a href="#services">
-                    Vận chuyển
-                </a>
-
-                <a href="#services">
-                    Xuất nhập khẩu
-                </a>
-
-                <a href="#services">
-                    Hải quan
-                </a>
-
-                <a href="#services">
-                    Đại diện mua hàng
-                </a>
-
-            </div>
-
-
-
-            <div class="footer-column">
-
-                <h3>
-                    Liên kết
-                </h3>
-
-                <a href="#about">
-                    Về chúng tôi
-                </a>
-
-                <a href="#process">
-                    Quy trình
-                </a>
-
-                <a href="#news">
-                    Tin tức
-                </a>
-
-                <a href="#contact">
-                    Liên hệ
-                </a>
-
-            </div>
-
-
-
-            <div class="footer-column">
-
-                <h3>
-                    Liên hệ
-                </h3>
-
-                <p>
-                    📍 Hà Nội, Việt Nam
-                </p>
-
-                <p>
-                    ☎ 0900 000 000
-                </p>
-
-                <p>
-                    ✉ info@nbtlogistics.vn
-                </p>
-
-            </div>
-
-
+            <li>
+              <a href="contact.html"> Contact </a>
+            </li>
+          </ul>
         </div>
 
+        <!-- SERVICES -->
+        <div class="footer-column">
+          <h3>Our Services</h3>
 
+          <ul>
+            <li>
+              <a href="#"> Road Transport </a>
+            </li>
 
-        <div class="footer-bottom">
+            <li>
+              <a href="#"> Sea Freight </a>
+            </li>
 
-            © 2026 NBT Logistics.
-            All rights reserved.
+            <li>
+              <a href="#"> Air Freight </a>
+            </li>
 
+            <li>
+              <a href="#"> Warehousing </a>
+            </li>
+
+            <li>
+              <a href="#"> Customs Clearance </a>
+            </li>
+          </ul>
         </div>
 
+        <!-- CONTACT -->
+        <div class="footer-column">
+          <h3>Contact Info</h3>
 
-    </div>
+          <div class="footer-contact">
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
 
-</footer>
+              123 Logistics Street, Ho Chi Minh City, Vietnam
+            </p>
 
+            <p>
+              <i class="fa-solid fa-phone"></i>
 
+              +84 123 456 789
+            </p>
 
-<!-- =====================================================
-     FLOATING CONTACT
-===================================================== -->
+            <p>
+              <i class="fa-solid fa-envelope"></i>
 
-<div class="floating-contact">
+              info@minhchaulogistics.com
+            </p>
 
+            <p>
+              <i class="fa-regular fa-clock"></i>
 
-    <a
-        href="tel:0900000000"
-        aria-label="Gọi điện"
-    >
-        ☎
-    </a>
+              Mon - Sat: 8:00 - 22:00
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <!-- COPYRIGHT -->
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Minh Châu Logistics. All Rights Reserved.</p>
 
-    <a
-        href="#"
-        class="zalo"
-        aria-label="Zalo"
-    >
-        Zalo
-    </a>
+          <div>
+            <a href="#"> Privacy Policy </a>
 
+            <a href="#"> Terms & Conditions </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-</div>
+    <!-- BACK TO TOP -->
 
+    <button class="back-to-top" id="backToTop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
 
-<!-- =====================================================
-     BACK TO TOP
-===================================================== -->
-
-<button
-    class="back-top"
-    aria-label="Lên đầu trang"
->
-    ↑
-</button>
-
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script src="script.js"></script>
-
-
-</body>
+    <!-- JAVASCRIPT -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>
-
