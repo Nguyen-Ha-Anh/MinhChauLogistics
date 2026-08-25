@@ -261,3 +261,141 @@
     font-size: 11px;
   }
 }
+
+/* =========================
+   ABOUT PAGE - TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+  .about-intro-grid {
+    gap: 50px;
+  }
+
+  .about-intro-content h2 {
+    font-size: 34px;
+  }
+
+  .about-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+/* =========================
+   ABOUT PAGE - MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .page-hero {
+    min-height: 300px;
+  }
+
+  .page-hero h1 {
+    font-size: 36px;
+  }
+
+
+  /* About intro */
+
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .about-intro-image img {
+    height: 400px;
+  }
+
+  .experience-box {
+    right: 15px;
+    bottom: -25px;
+
+    padding: 20px;
+  }
+
+  .experience-box strong {
+    font-size: 32px;
+  }
+
+  .about-intro-content {
+    margin-top: 15px;
+  }
+
+  .about-intro-content h2 {
+    font-size: 30px;
+  }
+
+
+  /* Why */
+
+  .about-why {
+    padding: 65px 0;
+  }
+
+  .about-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Mission */
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-card {
+    padding: 35px 25px;
+  }
+
+
+  /* Stats */
+
+  .company-stats {
+    padding: 65px 0;
+  }
+
+  .company-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px 20px;
+  }
+
+  .company-stat h3 {
+    font-size: 32px;
+  }
+
+
+  /* Process */
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* CTA */
+
+  .about-cta {
+    padding: 60px 0;
+  }
+
+  .about-cta-content {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .about-cta-content h2 {
+    font-size: 28px;
+  }
+
+}

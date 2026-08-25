@@ -978,3 +978,511 @@ img {
   background: var(--dark-color);
   color: #fff;
 }
+
+/* =========================
+   ABOUT PAGE HERO
+========================= */
+
+.page-hero {
+  position: relative;
+
+  min-height: 380px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("../assets/images/about-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  color: #fff;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(16, 27, 37, 0.9),
+    rgba(16, 27, 37, 0.7)
+  );
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+}
+
+.page-hero-content > span {
+  display: inline-block;
+
+  color: var(--primary-color);
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+.page-hero h1 {
+  font-size: clamp(38px, 6vw, 60px);
+
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  font-size: 13px;
+}
+
+.breadcrumb a {
+  color: var(--primary-color);
+}
+
+.breadcrumb i {
+  font-size: 10px;
+}
+
+/* =========================
+   ABOUT INTRO
+========================= */
+
+.about-intro {
+  overflow: hidden;
+}
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+.about-intro-image {
+  position: relative;
+}
+
+.about-intro-image img {
+  height: 520px;
+
+  object-fit: cover;
+}
+
+.experience-box {
+  position: absolute;
+
+  right: -30px;
+  bottom: 35px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 25px 30px;
+
+  background: var(--primary-color);
+
+  background: #3b1f6e;
+
+  color: var(--primary-color);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.experience-box strong {
+  font-size: 40px;
+}
+
+.experience-box span {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  line-height: 1.6;
+}
+
+.about-intro-content h2 {
+  font-size: 40px;
+
+  line-height: 1.3;
+
+  color: var(--dark-color);
+
+  margin-bottom: 25px;
+}
+
+.about-intro-content > p {
+  color: var(--text-color);
+
+  line-height: 1.9;
+
+  margin-bottom: 15px;
+}
+
+.about-highlight-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+
+  margin: 30px 0;
+}
+
+.about-highlight {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.about-highlight i {
+  color: var(--primary-color);
+
+  font-size: 18px;
+}
+
+/* =========================
+   ABOUT WHY
+========================= */
+
+.about-why {
+  padding: 90px 0;
+
+  background: #f7f8fa;
+}
+
+.about-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.about-why-card {
+  padding: 40px 25px;
+
+  background: #fff;
+
+  text-align: center;
+
+  border-bottom: 3px solid transparent;
+
+  transition: 0.3s;
+}
+
+.about-why-card:hover {
+  transform: translateY(-8px);
+
+  border-bottom-color: var(--primary-color);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.about-why-icon {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff8e5;
+
+  color: var(--primary-color);
+
+  font-size: 27px;
+}
+
+.about-why-card h3 {
+  color: var(--dark-color);
+
+  margin-bottom: 12px;
+}
+
+.about-why-card p {
+  font-size: 13px;
+
+  color: #777;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   MISSION - VISION
+========================= */
+
+.mission-vision {
+  background: #fff;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.mission-card {
+  padding: 45px 35px;
+
+  background: #f7f8fa;
+
+  transition: 0.3s;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.mission-card-dark {
+  background: #3b1f6e;
+
+  color: #fff;
+}
+
+.mission-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--primary-color);
+
+  color: var(--dark-color);
+
+  font-size: 25px;
+
+  margin-bottom: 30px;
+}
+
+.mission-card > span {
+  display: block;
+
+  color: var(--primary-color);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+.mission-card h3 {
+  color: var(--dark-color);
+
+  font-size: 22px;
+
+  line-height: 1.4;
+
+  margin-bottom: 18px;
+}
+
+.mission-card-dark h3 {
+  color: #fff;
+}
+
+.mission-card p {
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.9;
+}
+
+.mission-card-dark p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* =========================
+   COMPANY STATS
+========================= */
+
+.company-stats {
+  position: relative;
+
+  padding: 90px 0;
+
+  background-image: url("../assets/images/logistics-stats.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.company-stats-overlay {
+  position: absolute;
+  inset: 0;
+
+  /* background: rgba(23, 33, 43, 0.92); */
+  background: #3b1f6e;
+}
+
+.company-stats-grid {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+}
+
+.company-stat {
+  text-align: center;
+
+  color: #fff;
+}
+
+.company-stat i {
+  color: var(--primary-color);
+
+  font-size: 38px;
+
+  margin-bottom: 20px;
+}
+
+.company-stat h3 {
+  font-size: 42px;
+
+  margin-bottom: 10px;
+}
+
+.company-stat p {
+  font-size: 13px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* =========================
+   WORK PROCESS
+========================= */
+
+.work-process {
+  background: #fff;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.process-item {
+  position: relative;
+
+  text-align: center;
+
+  padding: 30px 20px;
+}
+
+.process-number {
+  width: 40px;
+  height: 40px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--dark-color);
+
+  color: var(--primary-color);
+
+  font-size: 12px;
+  font-weight: 700;
+
+  border-radius: 50%;
+}
+
+.process-item > i {
+  font-size: 38px;
+
+  color: var(--primary-color);
+
+  margin-bottom: 20px;
+}
+
+.process-item h3 {
+  color: var(--dark-color);
+
+  margin-bottom: 12px;
+}
+
+.process-item p {
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   ABOUT CTA
+========================= */
+
+.about-cta {
+  padding: 70px 0;
+
+  /* background: var(--dark-color); */
+  background: #3b1f6e;
+
+  color: #fff;
+}
+
+.about-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.about-cta-content span {
+  color: var(--primary-color);
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.about-cta-content h2 {
+  font-size: 34px;
+
+  margin-top: 12px;
+}
+
+.about-cta-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.about-cta .btn-outline {
+  border-color: rgba(255, 255, 255, 0.5);
+}
