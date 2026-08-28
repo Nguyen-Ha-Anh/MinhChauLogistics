@@ -399,3 +399,194 @@
   }
 
 }
+
+/* =========================
+   SERVICES TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+    .services-hero {
+        min-height: 350px;
+    }
+
+    .services-hero h1 {
+        font-size: 44px;
+    }
+
+    .services-intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail-grid {
+        gap: 50px;
+    }
+
+    .service-detail-image {
+        height: 480px;
+    }
+
+    .service-detail-content h2 {
+        font-size: 32px;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   SERVICES MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+
+    .services-hero {
+        min-height: 330px;
+
+        background-position: center;
+    }
+
+    .services-hero-content {
+        text-align: center;
+
+        margin: auto;
+    }
+
+    .services-hero-subtitle {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+    .services-hero h1 {
+        font-size: 34px;
+
+        line-height: 1.2;
+    }
+
+    .services-hero p {
+        font-size: 14px;
+    }
+
+    .breadcrumb {
+        justify-content: center;
+    }
+
+
+    /* INTRO */
+
+    .services-intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        margin-top: 35px;
+    }
+
+    .services-intro-item {
+        padding: 22px;
+    }
+
+
+    /* SERVICE */
+
+    .service-detail {
+        padding: 65px 0;
+    }
+
+    .service-detail-grid,
+    .service-detail-grid.reverse {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        direction: ltr;
+    }
+
+    .service-detail-image {
+        height: 300px;
+
+        order: 1;
+    }
+
+    .service-detail-content {
+        order: 2;
+
+        max-width: none;
+    }
+
+    .service-detail-content h2 {
+        font-size: 28px;
+    }
+
+    .service-lead {
+        font-size: 13px;
+    }
+
+    .service-features {
+        gap: 11px;
+    }
+
+    .service-features li {
+        font-size: 12px;
+    }
+
+    .service-message {
+        padding: 17px;
+    }
+
+    .service-message span {
+        font-size: 12px;
+    }
+
+    .service-number {
+        width: 65px;
+        height: 65px;
+
+        font-size: 21px;
+    }
+
+
+    /* PROCESS */
+
+    .process-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        margin-top: 35px;
+    }
+
+    .process-item {
+        padding: 35px 25px;
+    }
+
+
+    /* CTA */
+
+    .services-cta {
+        padding: 55px 0;
+    }
+
+    .services-cta-content {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .services-cta-content h2 {
+        font-size: 28px;
+    }
+
+    .services-cta-content p {
+        font-size: 12px;
+    }
+
+}
