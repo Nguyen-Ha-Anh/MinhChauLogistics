@@ -19,7 +19,7 @@ function loadHeader() {
             const header = document.getElementById("header");
 
             if (!header) {
-                console.error("Không tìm thấy #header");
+                console.error("Không tìm thấy header");
                 return;
             }
 
@@ -48,7 +48,7 @@ function loadFooter() {
         .then(response => {
 
             if (!response.ok) {
-                throw new Error("Không thể tải footer.html");
+                throw new Error("Không thể tải footer");
             }
 
             return response.text();
@@ -59,7 +59,7 @@ function loadFooter() {
             const footer = document.getElementById("footer");
 
             if (!footer) {
-                console.error("Không tìm thấy #footer");
+                console.error("Không tìm thấy footer");
                 return;
             }
 

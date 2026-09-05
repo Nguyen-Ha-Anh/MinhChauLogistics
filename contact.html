@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MINH CHÂU LOGISTICS</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <span class="section-label">LIÊN HỆ VỚI CHÚNG TÔI</span>
+
+            <h2>
+              Bạn đang có nhu cầu<br />
+              nhập khẩu hoặc vận chuyển?
+            </h2>
+
+            <p>
+              Hãy để lại thông tin, Minh Châu Logistics sẽ liên hệ và tư vấn
+              giải pháp phù hợp với nhu cầu của bạn.
+            </p>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullname">Họ và tên</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Nhập họ và tên"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Nhập số điện thoại"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="company">Tên công ty</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Tên công ty"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="industry">Ngành hàng</label>
+              <select id="industry" name="industry" required>
+                <option value="">-- Chọn ngành hàng --</option>
+                <option value="May mặc">May mặc</option>
+                <option value="Điện tử">Điện tử</option>
+                <option value="Máy móc">Máy móc</option>
+                <option value="Nội thất">Nội thất</option>
+                <option value="Gia dụng">Gia dụng</option>
+                <option value="Nguyên vật liệu">Nguyên vật liệu</option>
+                <option value="Khác">Khác</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Nhu cầu dịch vụ</label>
+              <select id="service" name="service" required>
+                <option value="">-- Chọn dịch vụ --</option>
+                <option value="Nhập khẩu chính ngạch">
+                  Nhập khẩu chính ngạch
+                </option>
+                <option value="Vận chuyển Trung Quốc - Việt Nam">
+                  Vận chuyển Trung Quốc - Việt Nam
+                </option>
+                <option value="Tìm kiếm nguồn hàng">Tìm kiếm nguồn hàng</option>
+                <option value="Nhập khẩu ủy thác">Nhập khẩu ủy thác</option>
+                <option value="Thủ tục hải quan">Thủ tục hải quan</option>
+                <option value="Khác">Khác</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Nội dung cần tư vấn</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Mô tả nhu cầu của bạn..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">
+              GỬI YÊU CẦU
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <p id="formMessage"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
