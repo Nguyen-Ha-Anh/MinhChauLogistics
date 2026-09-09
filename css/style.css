@@ -155,7 +155,7 @@ img {
 
   background: #fff;
 
-  z-index: 9999;
+  z-index: 10000;
 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
@@ -256,6 +256,7 @@ img {
 }
 
 .mobile-menu-btn {
+  z-index: 10003;
   display: none;
 
   border: none;
@@ -273,6 +274,7 @@ img {
 .navbar {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
+  z-index: 10002 !important;
 }
 
 .nav-list {

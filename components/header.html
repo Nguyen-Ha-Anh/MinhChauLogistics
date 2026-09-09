@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header</title>
-
-    
   </head>
+
   <body>
     <header class="header">
+      <!-- =========================
+           TOP HEADER
+      ========================== -->
+
       <div class="top-header">
         <div class="container top-header-container">
+          <!-- LOGO -->
+
           <a href="index.html" class="logo">
-            <img src="/assets/3.png" alt="Minh Châu Logistics" />
+            <img src="./assets/3.png" alt="Minh Châu Logistics" />
           </a>
+
+          <!-- HEADER INFO -->
 
           <div class="header-info">
             <div class="header-info-item">
@@ -39,13 +46,28 @@
             </div>
           </div>
 
-          <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <!-- MOBILE MENU BUTTON -->
+
+          <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            type="button"
+            aria-label="Mở menu"
+          >
             <i class="fa-solid fa-bars"></i>
           </button>
         </div>
       </div>
 
-      <!-- NAVBAR -->
+      <!-- =========================
+           DARK OVERLAY
+      ========================== -->
+
+      <div class="menu-overlay" id="menuOverlay"></div>
+
+      <!-- =========================
+           NAVBAR / SIDEBAR
+      ========================== -->
 
       <nav class="navbar" id="navbar">
         <div class="container">
@@ -53,21 +75,24 @@
             <li>
               <a href="index.html">
                 <i class="fa-solid fa-house"></i>
-                Trang Chủ
+
+                <span>Trang Chủ</span>
               </a>
             </li>
 
             <li>
               <a href="services.html">
                 <i class="fa-solid fa-truck-fast"></i>
-                Dịch Vụ
+
+                <span>Dịch Vụ</span>
               </a>
             </li>
 
             <li>
               <a href="contact.html">
                 <i class="fa-solid fa-phone"></i>
-                Liên hệ
+
+                <span>Liên hệ</span>
               </a>
             </li>
           </ul>

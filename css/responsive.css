@@ -267,7 +267,6 @@
 ========================= */
 
 @media (max-width: 1024px) {
-
   .about-intro-grid {
     gap: 50px;
   }
@@ -283,18 +282,12 @@
   .mission-grid {
     grid-template-columns: 1fr;
   }
-
-  .process-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
 }
 /* =========================
    ABOUT PAGE - MOBILE
 ========================= */
 
 @media (max-width: 768px) {
-
   .page-hero {
     min-height: 300px;
   }
@@ -302,7 +295,6 @@
   .page-hero h1 {
     font-size: 36px;
   }
-
 
   /* About intro */
 
@@ -335,7 +327,6 @@
     font-size: 30px;
   }
 
-
   /* Why */
 
   .about-why {
@@ -346,7 +337,6 @@
     grid-template-columns: 1fr;
   }
 
-
   /* Mission */
 
   .mission-grid {
@@ -356,7 +346,6 @@
   .mission-card {
     padding: 35px 25px;
   }
-
 
   /* Stats */
 
@@ -374,13 +363,11 @@
     font-size: 32px;
   }
 
-
   /* Process */
 
   .process-grid {
     grid-template-columns: 1fr;
   }
-
 
   /* CTA */
 
@@ -397,7 +384,6 @@
   .about-cta-content h2 {
     font-size: 28px;
   }
-
 }
 
 /* =========================
@@ -405,188 +391,216 @@
 ========================= */
 
 @media (max-width: 1024px) {
+  .services-hero {
+    min-height: 350px;
+  }
 
-    .services-hero {
-        min-height: 350px;
-    }
+  .services-hero h1 {
+    font-size: 44px;
+  }
 
-    .services-hero h1 {
-        font-size: 44px;
-    }
+  .services-intro-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .services-intro-grid {
-        grid-template-columns: 1fr;
-    }
+  .service-detail-grid {
+    gap: 50px;
+  }
 
-    .service-detail-grid {
-        gap: 50px;
-    }
+  .service-detail-image {
+    height: 480px;
+  }
 
-    .service-detail-image {
-        height: 480px;
-    }
-
-    .service-detail-content h2 {
-        font-size: 32px;
-    }
-
-    .process-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+  .service-detail-content h2 {
+    font-size: 32px;
+  }
 }
 
+/* =========================
+   MOBILE - WORK PROCESS
+========================= */
+
+@media (max-width: 768px) {
+  .process-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .process-item {
+    grid-column: auto !important;
+    width: 100%;
+
+    padding: 35px 25px;
+    background: #fff;
+  }
+
+  .process-number {
+    margin-bottom: 20px;
+  }
+
+  .process-item > i {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+
+  .process-item h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .process-item p {
+    font-size: 13px;
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
 
 /* =========================
    SERVICES MOBILE
 ========================= */
 
 @media (max-width: 768px) {
+  /* HERO */
 
-    /* HERO */
+  .services-hero {
+    min-height: 330px;
 
-    .services-hero {
-        min-height: 330px;
+    background-position: center;
+  }
 
-        background-position: center;
-    }
+  .services-hero-content {
+    text-align: center;
 
-    .services-hero-content {
-        text-align: center;
+    margin: auto;
+  }
 
-        margin: auto;
-    }
+  .services-hero-subtitle {
+    font-size: 11px;
 
-    .services-hero-subtitle {
-        font-size: 11px;
+    letter-spacing: 2px;
+  }
 
-        letter-spacing: 2px;
-    }
+  .services-hero h1 {
+    font-size: 34px;
 
-    .services-hero h1 {
-        font-size: 34px;
+    line-height: 1.2;
+  }
 
-        line-height: 1.2;
-    }
+  .services-hero p {
+    font-size: 14px;
+  }
 
-    .services-hero p {
-        font-size: 14px;
-    }
+  .breadcrumb {
+    justify-content: center;
+  }
 
-    .breadcrumb {
-        justify-content: center;
-    }
+  /* INTRO */
 
+  .services-intro-grid {
+    grid-template-columns: 1fr;
 
-    /* INTRO */
+    gap: 15px;
 
-    .services-intro-grid {
-        grid-template-columns: 1fr;
+    margin-top: 35px;
+  }
 
-        gap: 15px;
+  .services-intro-item {
+    padding: 22px;
+  }
 
-        margin-top: 35px;
-    }
+  /* SERVICE */
 
-    .services-intro-item {
-        padding: 22px;
-    }
+  .service-detail {
+    padding: 65px 0;
+  }
 
+  .service-detail-grid,
+  .service-detail-grid.reverse {
+    grid-template-columns: 1fr;
 
-    /* SERVICE */
+    gap: 35px;
 
-    .service-detail {
-        padding: 65px 0;
-    }
+    direction: ltr;
+  }
 
-    .service-detail-grid,
-    .service-detail-grid.reverse {
-        grid-template-columns: 1fr;
+  .service-detail-image {
+    height: 300px;
 
-        gap: 35px;
+    order: 1;
+  }
 
-        direction: ltr;
-    }
+  .service-detail-content {
+    order: 2;
 
-    .service-detail-image {
-        height: 300px;
+    max-width: none;
+  }
 
-        order: 1;
-    }
+  .service-detail-content h2 {
+    font-size: 28px;
+  }
 
-    .service-detail-content {
-        order: 2;
+  .service-lead {
+    font-size: 13px;
+  }
 
-        max-width: none;
-    }
+  .service-features {
+    gap: 11px;
+  }
 
-    .service-detail-content h2 {
-        font-size: 28px;
-    }
+  .service-features li {
+    font-size: 12px;
+  }
 
-    .service-lead {
-        font-size: 13px;
-    }
+  .service-message {
+    padding: 17px;
+  }
 
-    .service-features {
-        gap: 11px;
-    }
+  .service-message span {
+    font-size: 12px;
+  }
 
-    .service-features li {
-        font-size: 12px;
-    }
+  .service-number {
+    width: 65px;
+    height: 65px;
 
-    .service-message {
-        padding: 17px;
-    }
+    font-size: 21px;
+  }
 
-    .service-message span {
-        font-size: 12px;
-    }
+  /* PROCESS */
 
-    .service-number {
-        width: 65px;
-        height: 65px;
+  .process-grid {
+    grid-template-columns: 1fr;
 
-        font-size: 21px;
-    }
+    gap: 15px;
 
+    margin-top: 35px;
+  }
 
-    /* PROCESS */
+  .process-item {
+    padding: 35px 25px;
+  }
 
-    .process-grid {
-        grid-template-columns: 1fr;
+  /* CTA */
 
-        gap: 15px;
+  .services-cta {
+    padding: 55px 0;
+  }
 
-        margin-top: 35px;
-    }
+  .services-cta-content {
+    flex-direction: column;
 
-    .process-item {
-        padding: 35px 25px;
-    }
+    text-align: center;
 
+    gap: 30px;
+  }
 
-    /* CTA */
+  .services-cta-content h2 {
+    font-size: 28px;
+  }
 
-    .services-cta {
-        padding: 55px 0;
-    }
-
-    .services-cta-content {
-        flex-direction: column;
-
-        text-align: center;
-
-        gap: 30px;
-    }
-
-    .services-cta-content h2 {
-        font-size: 28px;
-    }
-
-    .services-cta-content p {
-        font-size: 12px;
-    }
-
+  .services-cta-content p {
+    font-size: 12px;
+  }
 }
