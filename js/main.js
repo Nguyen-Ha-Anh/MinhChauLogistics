@@ -157,39 +157,104 @@ function initActiveMenu() {
 
 const form = document.getElementById("contactForm");
 
+const successPopup = document.getElementById("successPopup");
+const successPopupClose = document.getElementById("successPopupClose");
+const successPopupBtn = document.getElementById("successPopupBtn");
+const successPopupOverlay = document.querySelector(".success-popup-overlay");
+
 if (form) {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
+    const formMessage = document.getElementById("formMessage");
+    const submitButton = form.querySelector('button[type="submit"]');
+
     const formData = {
-      fullname: document.getElementById("fullname").value,
-      phone: document.getElementById("phone").value,
-      email: document.getElementById("email").value,
-      company: document.getElementById("company").value,
+      fullname: document.getElementById("fullname").value.trim(),
+      phone: document.getElementById("phone").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      company: document.getElementById("company").value.trim(),
       industry: document.getElementById("industry").value,
       service: document.getElementById("service").value,
-      message: document.getElementById("message").value,
+      message: document.getElementById("message").value.trim(),
     };
 
     try {
+      // Đổi nút thành "Đang gửi..."
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = "Đang gửi...";
+      }
+
       const response = await fetch("http://localhost:3000/api/contact", {
         method: "POST",
+
         headers: {
           "Content-Type": "application/json",
         },
+
         body: JSON.stringify(formData),
       });
 
       const result = await response.json();
 
-      document.getElementById("formMessage").textContent = result.message;
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Gửi yêu cầu thất bại");
+      }
+
+      // ==============================
+      // GỬI THÀNH CÔNG
+      // ==============================
+
+      // Xóa toàn bộ form
+      form.reset();
+
+      // Xóa thông báo cũ
+      if (formMessage) {
+        formMessage.textContent = "";
+      }
+
+      // Hiện popup
+      if (successPopup) {
+        successPopup.classList.add("show");
+      }
     } catch (error) {
       console.error("CONTACT ERROR:", error);
 
-      document.getElementById("formMessage").textContent =
-        "Có lỗi xảy ra. Vui lòng thử lại.";
+      if (formMessage) {
+        formMessage.textContent =
+          "Không thể gửi yêu cầu. Vui lòng thử lại sau.";
+      }
+    } finally {
+      // Bật lại nút
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = "GỬI YÊU CẦU";
+      }
     }
   });
+}
+
+// ==============================
+// CLOSE SUCCESS POPUP
+// ==============================
+
+function closeSuccessPopup() {
+  if (successPopup) {
+    successPopup.classList.remove("show");
+  }
+}
+
+if (successPopupClose) {
+  successPopupClose.addEventListener("click", closeSuccessPopup);
+}
+
+if (successPopupBtn) {
+  successPopupBtn.addEventListener("click", closeSuccessPopup);
+}
+
+if (successPopupOverlay) {
+  successPopupOverlay.addEventListener("click", closeSuccessPopup);
 }
 
 // ==============================
