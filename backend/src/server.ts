@@ -67,6 +67,12 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("Server đang chạy tại http://localhost:3000");
+// app.listen(process.env.PORT || 3000, () => {
+//   console.log("Server đang chạy tại http://localhost:3000");
+// });
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(Number(PORT), "0.0.0.0", () => {
+  console.log(`Server đang chạy tại port ${PORT}`);
 });
